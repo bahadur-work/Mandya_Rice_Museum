@@ -13624,7 +13624,7 @@
                     path: path.substring(0, path.lastIndexOf(',')).split(','),
                     forceReload: initialLoad !== true
                 });
-                //if this is a child of a list view and it's the initial load of the editor, we need to get the tree node 
+                //if this is a child of a list view and it's the initial load of the editor, we need to get the tree node
                 // from the server so that we can load in the actions menu.
                 umbRequestHelper.resourcePromise($http.get(content.treeNodeUrl), 'Failed to retrieve data for child node ' + content.id).then(function (node) {
                     $scope.page.menu.currentNode = node;
@@ -13646,7 +13646,7 @@
             if (formHelper.submitForm({ scope: $scope })) {
                 $scope.page.saveButtonState = 'busy';
                 //anytime a user is changing a member's password without the oldPassword, we are in effect resetting it so we need to set that flag here
-                var passwordProp = _.find(contentEditingHelper.getAllProps($scope.content), function (e) {
+                var passwordProp = _.find($scope.content.membershipProperties, function (e) {
                     return e.alias === '_umb_password';
                 });
                 if (passwordProp && passwordProp.value && typeof passwordProp.value.reset !== 'undefined' && !passwordProp.value.reset) {
