@@ -1,0 +1,35 @@
+{
+  "id": "3521d67b-9c89-4e43-8b28-5b9ac167c298",
+  "name": "Send template email to bahadur.work.email@gmail.com",
+  "form": "a98a9886-1b33-4ad5-9663-e92feb46fc4a",
+  "active": true,
+  "includeSensitiveData": "False",
+  "workflowTypeId": "17c61629-d984-4e86-b43b-a8407b3efea9",
+  "executesOn": "Submitted",
+  "settings": {
+    "RazorViewFilePath": "Forms/Emails/Example-Template.cshtml",
+    "Attachment": "",
+    "Email": "bahadur.work.email@gmail.com",
+    "CcEmail": "",
+    "BccEmail": "",
+    "SenderEmail": "",
+    "ReplyToEmail": "",
+    "Subject": "The Form '{form_name}' was submitted"
+  },
+  "sortOrder": 1,
+  "isMandatory": false,
+  "condition": {
+    "id": "00000000-0000-0000-0000-000000000000",
+    "enabled": true,
+    "actionType": "Hide",
+    "logicType": "All",
+    "rules": [
+      {
+        "id": "00000000-0000-0000-0000-000000000000",
+        "field": "9d4b2be6-3e7e-43bb-d0e8-b5edd2821f70",
+        "operator": "Is",
+        "value": "Shop our rice"
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+<div ng-controller="UmbracoForms.ThemePickerController as vm">
+
+    <umb-node-preview
+        ng-if="vm.selectedTheme.name"
+        name="vm.selectedTheme.name"
+        icon="vm.selectedTheme.icon"
+        allow-remove="true"
+        on-remove="vm.remove()">
+    </umb-node-preview>
+
+    <button type="button" ng-if="!vm.selectedTheme.name" class="umb-node-preview-add" ng-click="vm.openThemePicker()">
+        <localize key="general_add">Add</localize>
+    </button>
+
+    <umb-overlay
+        ng-if="vm.themePickerOverlay.show"
+        model="vm.themePickerOverlay"
+        view="vm.themePickerOverlay.view"
+        position="right">
+    </umb-overlay>
+
+</div>

@@ -1,0 +1,137 @@
+<div class="umb-forms-entry">
+
+  <div class="umb-forms-entry-main">
+
+    <umb-box>
+
+      <!-- TODO: make render types directive so the RenderTypes don't rely a "field" model -->
+      <div class="umb-control-group" ng-repeat="detail in entry.details">
+        <label class="control-label" data-umb="label_{{detail.name.replace(' ','') }}">{{ detail.name }}</label>
+
+        <small class="" ng-if="detail.containsSensitiveData">
+          <i class="icon-lock umb-group-builder__property-tag-icon" aria-hidden="true"></i>
+          <localize key="contentTypeEditor_isSensitiveData">Is sensitive data</localize>
+        </small>
+
+        <umb-forms-render-type field="detail.displayValue"
+                               detail="detail"
+                               name="detail.name"
+                               view="detail.view"
+                               edit-view="detail.editView"
+                               sensitive="detail.containsSensitiveData"
+                               has-access="sensitiveDataAccess"
+                               allow-edit="allowEdit">
+        </umb-forms-render-type>
+      </div>
+    </umb-box>
+
+    <umb-box ng-if="workflowAuditTrailEntries.length > 0">
+      <div class="umb-forms-workflow-audit">
+        <h2><localize key="formEntries_workflowAudit"></localize></h2>
+        <umb-load-indicator ng-if="retryingWorkflow"></umb-load-indicator>
+        <table class="umb-forms-entry-audit-trail">
+          <tr>
+            <th><localize key="formEntries_workflowAuditName"></localize></th>
+            <th><localize key="formEntries_workflowAuditType"></localize></th>
+            <th><localize key="formEntries_workflowAuditExecutedOn"></localize></th>
+            <th><localize key="formEntries_workflowAuditExecutionStage"></localize></th>
+            <th><localize key="formEntries_workflowAuditResult"></localize></th>
+            <th></th>
+          </tr>
+          <tr ng-repeat="workflowAuditTrailEntry in workflowAuditTrailEntries">
+            <td>{{workflowAuditTrailEntry.name}}</td>
+            <td>{{workflowAuditTrailEntry.typeName}}</td>
+            <td>{{workflowAuditTrailEntry.executedOn | momentDateTimeZone : 'LLL'}}</td>
+            <td>
+              <span ng-if="workflowAuditTrailEntry.executionStage">
+                <localize ng-attr-key="formEntries_workflowExecutionStage{{workflowAuditTrailEntry.executionStage}}"></localize>
+              </span>
+            </td>
+            <td><localize ng-attr-key="formEntries_workflowExecutionStatus{{workflowAuditTrailEntry.result}}"></localize></td>
+            <td ng-switch="workflowAuditTrailEntry.result">
+              <div ng-switch-when="Completed">
+                <umb-button type="button"
+                            action="runWorkflow(workflowAuditTrailEntry.workflowKey)"
+                            button-style="link"
+                            label-key="formEntries_workflowAuditRunAgain">
+                </umb-button>
+              </div>
+              <div ng-switch-when="SkippedDueToConditions">
+                <umb-button type="button"
+                            action="runWorkflow(workflowAuditTrailEntry.workflowKey)"
+                            button-style="link"
+                            label-key="formEntries_workflowAuditRunAnyway">
+                </umb-button>
+              </div>
+              <div ng-switch-default>
+                <umb-button type="button"
+                            action="runWorkflow(workflowAuditTrailEntry.workflowKey)"
+                            button-style="link"
+                            label-key="formEntries_workflowAuditRetry">
+                </umb-button>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </umb-box>
+  </div>
+  <div class="umb-forms-entry-sidebar">
+    <umb-box>
+      <div class="umb-control-group -no-border">
+        <label class="control-label"><localize key="formEntries_submittedOn"></localize></label>
+        <div title="{{entry.created  | momentDateTimeZone : 'LLL'}}">{{entry.created | relativeDate }}</div>
+      </div>
+
+      <div class="umb-control-group -no-border" ng-if="entry.updated !== entry.created">
+        <label class="control-label"><localize key="formEntries_updatedOn"></localize></label>
+        <div title="{{entry.updated  | momentDateTimeZone : 'LLL' }}">{{entry.updated | relativeDate }}</div>
+      </div>
+
+      <div class="umb-control-group -no-border" ng-if="entry.umbracoPage.name">
+        <label class="control-label"><localize key="formEntries_fromPage"></localize></label>
+        <div ng-if="canLinkToContent"><a ng-click="openContent(entry.umbracoPage.id)">{{entry.umbracoPage.name}}</a></div>
+        <div ng-if="!canLinkToContent">{{entry.umbracoPage.name}}</div>
+      </div>
+
+      <div class="umb-control-group -no-border" ng-if="hasMember(entry)">
+        <label class="control-label"><localize key="formEntries_member"></localize></label>
+        <div ng-if="canLinkToMembers"><a ng-click="openMember(entry)" ng-bind="getMemberDetails(entry)"></a></div>
+        <div ng-if="!canLinkToMembers"><span ng-bind="getMemberDetails(entry)"></span></div>
+      </div>
+
+      <div class="umb-control-group -no-border">
+        <label class="control-label"><localize key="formEntries_state"></localize></label>
+        <div>{{entry.state}}</div>
+      </div>
+
+      <div class="umb-control-group -no-border">
+        <label class="control-label"><localize key="general_id"></localize></label>
+        <div>{{entry.id}}</div>
+      </div>
+
+      <div class="umb-control-group -no-border">
+        <label class="control-label"><localize key="formEntries_uniqueId"></localize></label>
+        <div><small>{{entry.uniqueId}}</small></div>
+      </div>
+
+      <div class="umb-control-group -no-border" ng-show="allowShowAuditTrail">
+        <label class="control-label"><localize key="formEntries_auditTrail"></localize></label>
+        <div ng-show="!showingAuditTrail"><small><a ng-click="toggleAuditTrail()"><localize key="formEntries_showAuditTrail"></localize></a></small></div>
+        <table ng-show="showingAuditTrail" class="umb-forms-entry-audit-trail">
+          <tr>
+            <th><localize key="formEntries_updatedOn"></localize></th>
+            <th><localize key="formEntries_updatedBy"></localize></th>
+          </tr>
+          <tr ng-repeat="auditTrailEntry in auditTrailEntries">
+            <td title="{{auditTrailEntry.updatedOn  | momentDateTimeZone : 'LLL'}}">{{auditTrailEntry.updatedOn | relativeDate }}</td>
+            <td>{{auditTrailEntry.updatedBy}}</td>
+          </tr>
+        </table>
+        <div ng-show="showingAuditTrail"><small><a ng-click="toggleAuditTrail()"><localize key="formEntries_hideAuditTrail"></localize></a></small></div>
+      </div>
+    </umb-box>
+
+  </div>
+
+</div>

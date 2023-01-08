@@ -1,0 +1,62 @@
+<div ng-controller="UmbracoForms.FormPickerOverlayController as vm" class="umb-form-picker-select">
+
+  <umb-load-indicator ng-if="vm.loading">
+  </umb-load-indicator>
+
+  <div ng-if="vm.allowFolderSelection" class="umb-form-picker-select-view">
+    <umb-radiobutton value="folder"
+                     model="vm.selectView"
+                     label-key="@formPicker_selectFromFolder">
+    </umb-radiobutton>
+    <umb-radiobutton value="list"
+                     model="vm.selectView"
+                     label-key="@formPicker_selectFromList">
+    </umb-radiobutton>
+  </div>
+
+  <div ng-show="vm.selectView === 'list'">
+    <div class="umb-control-group -no-border">
+      <div class="form-search">
+        <i class="icon-search" aria-hidden="true"></i>
+        <input type="text"
+               class="umb-search-field search-query search-input input-block-level -full-width-input"
+               ng-model="vm.filterTerm"
+               localize="placeholder"
+               placeholder="@placeholders_filter"
+               umb-auto-focus>
+      </div>
+    </div>
+
+    <ul class="umb-actions umb-actions-child">
+      <li ng-repeat="form in vm.forms | orderBy:'name' | filter:vm.filterTerm"
+          ng-click="vm.pickForm(form, $index)">
+        <a href="" title="{{ form.name }}">
+          <i ng-if="!form.selected" class="icon-umb-contour" aria-hidden="true"></i>
+          <i ng-if="form.selected" class="icon-check color-green" aria-hidden="true"></i>
+          <span class="menu-label">
+            {{form.name}}
+            <small>{{form.fields}} </small>
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div ng-show="vm.selectView === 'folder'" class="umb-form-picker-tree">
+    <umb-tree section="forms"
+              treealias="form"
+              customtreeparams="hideEntries=1"
+              hideheader="true"
+              hideoptions="true"
+              isdialog="true"
+              api="vm.dialogTreeApi"
+              on-init="vm.onTreeInit()"
+              enablecheckboxes="true">
+    </umb-tree>
+  </div>
+
+  <div ng-if="vm.error" class="alert alert-warning">
+    {{ error }}
+  </div>
+
+</div>

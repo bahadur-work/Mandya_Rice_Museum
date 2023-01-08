@@ -1,0 +1,379 @@
+{
+  "name": "Contact Form",
+  "created": "2023-01-08T03:41:02.9704184+05:30",
+  "pages": [
+    {
+      "fieldSets": [
+        {
+          "caption": "",
+          "sortOrder": 0,
+          "id": "e055d15b-f2a1-44a3-cb31-0e8395116a7a",
+          "page": "00000000-0000-0000-0000-000000000000",
+          "containers": [
+            {
+              "caption": "",
+              "width": 12,
+              "fields": [
+                {
+                  "caption": "What would you like to contact us about?",
+                  "tooltip": "Hello! What can we help you with!",
+                  "placeholder": null,
+                  "cssClass": null,
+                  "alias": "whatWouldYouLikeToContactUsAbout",
+                  "id": "9d4b2be6-3e7e-43bb-d0e8-b5edd2821f70",
+                  "fieldTypeId": "903df9b0-a78c-11de-9fc1-db7a56d89593",
+                  "prevalueSourceId": "00000000-0000-0000-0000-000000000000",
+                  "dataSourceFieldKey": null,
+                  "containsSensitiveData": false,
+                  "mandatory": true,
+                  "regex": null,
+                  "requiredErrorMessage": null,
+                  "invalidErrorMessage": null,
+                  "condition": {
+                    "id": "eaed2d65-b689-43ea-b4a1-1b38ec58b4b7",
+                    "enabled": false,
+                    "actionType": "Show",
+                    "logicType": "All",
+                    "rules": []
+                  },
+                  "settings": {
+                    "DefaultValue": "",
+                    "ShowLabel": ""
+                  },
+                  "preValues": [
+                    "Book a visit",
+                    "Book a consultation",
+                    "Shop our rice",
+                    "It's something else"
+                  ],
+                  "parsedPreValues": [
+                    {
+                      "value": "Book a visit",
+                      "caption": null
+                    },
+                    {
+                      "value": "Book a consultation",
+                      "caption": null
+                    },
+                    {
+                      "value": "Shop our rice",
+                      "caption": null
+                    },
+                    {
+                      "value": "It's something else",
+                      "caption": null
+                    }
+                  ],
+                  "allowedUploadTypes": null,
+                  "allowMultipleFileUploads": true
+                },
+                {
+                  "caption": "Date of visit",
+                  "tooltip": "Enter your date of arrival. A visit ideally takes 2-4 hours.",
+                  "placeholder": null,
+                  "cssClass": null,
+                  "alias": "dateOfVisit",
+                  "id": "c4136a5b-7d39-418e-b246-3aba4ce2c246",
+                  "fieldTypeId": "f8b4c3b8-af28-11de-9dd8-ef5956d89593",
+                  "prevalueSourceId": "00000000-0000-0000-0000-000000000000",
+                  "dataSourceFieldKey": null,
+                  "containsSensitiveData": false,
+                  "mandatory": true,
+                  "regex": null,
+                  "requiredErrorMessage": "We need a date to book your slot.",
+                  "invalidErrorMessage": null,
+                  "condition": {
+                    "id": "edc05791-e08c-4704-a31e-a817cf287e0a",
+                    "enabled": true,
+                    "actionType": "Show",
+                    "logicType": "All",
+                    "rules": [
+                      {
+                        "id": "00000000-0000-0000-0000-000000000000",
+                        "field": "9d4b2be6-3e7e-43bb-d0e8-b5edd2821f70",
+                        "operator": "Is",
+                        "value": "Book a visit"
+                      }
+                    ]
+                  },
+                  "settings": {
+                    "Placeholder": ""
+                  },
+                  "preValues": [],
+                  "parsedPreValues": [],
+                  "allowedUploadTypes": null,
+                  "allowMultipleFileUploads": true
+                },
+                {
+                  "caption": "What will we talk about?",
+                  "tooltip": "An agenda, if you will.",
+                  "placeholder": null,
+                  "cssClass": null,
+                  "alias": "whatWillWeTalkAbout",
+                  "id": "d3ff66d2-56c3-405e-9d2b-d74ce6a39af9",
+                  "fieldTypeId": "023f09ac-1445-4bcb-b8fa-ab49f33bd046",
+                  "prevalueSourceId": "00000000-0000-0000-0000-000000000000",
+                  "dataSourceFieldKey": null,
+                  "containsSensitiveData": false,
+                  "mandatory": false,
+                  "regex": null,
+                  "requiredErrorMessage": null,
+                  "invalidErrorMessage": null,
+                  "condition": {
+                    "id": "f52ed8ff-102c-40f0-aa9a-685e6d03d35d",
+                    "enabled": true,
+                    "actionType": "Show",
+                    "logicType": "All",
+                    "rules": [
+                      {
+                        "id": "00000000-0000-0000-0000-000000000000",
+                        "field": "9d4b2be6-3e7e-43bb-d0e8-b5edd2821f70",
+                        "operator": "Is",
+                        "value": "Book a consultation"
+                      }
+                    ]
+                  },
+                  "settings": {
+                    "DefaultValue": "",
+                    "Placeholder": "Tell us more.",
+                    "ShowLabel": "",
+                    "AutocompleteAttribute": "",
+                    "NumberOfRows": "2",
+                    "MaximumLength": "500"
+                  },
+                  "preValues": [],
+                  "parsedPreValues": [],
+                  "allowedUploadTypes": null,
+                  "allowMultipleFileUploads": true
+                },
+                {
+                  "caption": "Tell us all about it.",
+                  "tooltip": "What's up?",
+                  "placeholder": null,
+                  "cssClass": null,
+                  "alias": "tellUsAllAboutIt",
+                  "id": "d4fc86d9-cfd7-45c8-f749-a4d4fc0abcc3",
+                  "fieldTypeId": "023f09ac-1445-4bcb-b8fa-ab49f33bd046",
+                  "prevalueSourceId": "00000000-0000-0000-0000-000000000000",
+                  "dataSourceFieldKey": null,
+                  "containsSensitiveData": false,
+                  "mandatory": false,
+                  "regex": null,
+                  "requiredErrorMessage": null,
+                  "invalidErrorMessage": null,
+                  "condition": {
+                    "id": "93a0e87a-f211-4ea4-b185-217879087c2d",
+                    "enabled": true,
+                    "actionType": "Show",
+                    "logicType": "All",
+                    "rules": [
+                      {
+                        "id": "00000000-0000-0000-0000-000000000000",
+                        "field": "9d4b2be6-3e7e-43bb-d0e8-b5edd2821f70",
+                        "operator": "Is",
+                        "value": "It's something else"
+                      }
+                    ]
+                  },
+                  "settings": {
+                    "DefaultValue": "",
+                    "Placeholder": "Lay it on us.",
+                    "ShowLabel": "",
+                    "AutocompleteAttribute": "",
+                    "NumberOfRows": "2",
+                    "MaximumLength": ""
+                  },
+                  "preValues": [],
+                  "parsedPreValues": [],
+                  "allowedUploadTypes": null,
+                  "allowMultipleFileUploads": true
+                },
+                {
+                  "caption": "Name",
+                  "tooltip": "Please enter your name",
+                  "placeholder": null,
+                  "cssClass": null,
+                  "alias": "name",
+                  "id": "3c71864a-a15e-4108-c069-338147cde3e8",
+                  "fieldTypeId": "3f92e01b-29e2-4a30-bf33-9df5580ed52c",
+                  "prevalueSourceId": "00000000-0000-0000-0000-000000000000",
+                  "dataSourceFieldKey": null,
+                  "containsSensitiveData": false,
+                  "mandatory": false,
+                  "regex": "^[a-zA-Z]+-",
+                  "requiredErrorMessage": null,
+                  "invalidErrorMessage": "Only A-Z allowed",
+                  "condition": {
+                    "id": "17d5ec08-3665-4b9c-9a04-1d0327f97b53",
+                    "enabled": false,
+                    "actionType": "Show",
+                    "logicType": "All",
+                    "rules": []
+                  },
+                  "settings": {
+                    "DefaultValue": "",
+                    "Placeholder": "My Name",
+                    "ShowLabel": "",
+                    "MaximumLength": "",
+                    "FieldType": "text",
+                    "AutocompleteAttribute": ""
+                  },
+                  "preValues": [],
+                  "parsedPreValues": [],
+                  "allowedUploadTypes": null,
+                  "allowMultipleFileUploads": true
+                },
+                {
+                  "caption": "Email",
+                  "tooltip": "An email address would be good too.",
+                  "placeholder": null,
+                  "cssClass": null,
+                  "alias": "email",
+                  "id": "14ede656-9632-4d20-f58f-fa1432c3ab32",
+                  "fieldTypeId": "3f92e01b-29e2-4a30-bf33-9df5580ed52c",
+                  "prevalueSourceId": "00000000-0000-0000-0000-000000000000",
+                  "dataSourceFieldKey": null,
+                  "containsSensitiveData": false,
+                  "mandatory": false,
+                  "regex": "^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$",
+                  "requiredErrorMessage": "",
+                  "invalidErrorMessage": "This doesn't look like a valid email. Try again?",
+                  "condition": {
+                    "id": "1876b71a-ede4-409f-92aa-c814f8ded16a",
+                    "enabled": false,
+                    "actionType": "Show",
+                    "logicType": "All",
+                    "rules": []
+                  },
+                  "settings": {
+                    "DefaultValue": "",
+                    "Placeholder": "Me@Somebody'sMailServer.com",
+                    "ShowLabel": "",
+                    "MaximumLength": "",
+                    "FieldType": "email",
+                    "AutocompleteAttribute": ""
+                  },
+                  "preValues": [],
+                  "parsedPreValues": [],
+                  "allowedUploadTypes": null,
+                  "allowMultipleFileUploads": true
+                },
+                {
+                  "caption": "Phone Number",
+                  "tooltip": "So much better to just pick up the phone and talk.",
+                  "placeholder": null,
+                  "cssClass": null,
+                  "alias": "phoneNumber",
+                  "id": "ce5b22c7-0284-43be-95ff-f27992463760",
+                  "fieldTypeId": "3f92e01b-29e2-4a30-bf33-9df5580ed52c",
+                  "prevalueSourceId": "00000000-0000-0000-0000-000000000000",
+                  "dataSourceFieldKey": null,
+                  "containsSensitiveData": false,
+                  "mandatory": false,
+                  "regex": "^[0-9]*$",
+                  "requiredErrorMessage": null,
+                  "invalidErrorMessage": "This does not look like a phone number. Try again?",
+                  "condition": {
+                    "id": "f016d8d3-26f6-4093-bcb6-2b6bc40bb332",
+                    "enabled": false,
+                    "actionType": "Show",
+                    "logicType": "All",
+                    "rules": []
+                  },
+                  "settings": {
+                    "DefaultValue": "",
+                    "Placeholder": "+91 xxxx xxxxxx",
+                    "ShowLabel": "",
+                    "MaximumLength": "13",
+                    "FieldType": "tel",
+                    "AutocompleteAttribute": ""
+                  },
+                  "preValues": [],
+                  "parsedPreValues": [],
+                  "allowedUploadTypes": null,
+                  "allowMultipleFileUploads": true
+                }
+              ]
+            }
+          ],
+          "condition": {
+            "id": "af278638-12ab-4a6d-87bf-6f6b0441a0c1",
+            "enabled": false,
+            "actionType": "Show",
+            "logicType": "All",
+            "rules": []
+          }
+        },
+        {
+          "caption": null,
+          "sortOrder": 0,
+          "id": "b7a0b403-c9b0-4138-9611-5bfcc87e7213",
+          "page": "00000000-0000-0000-0000-000000000000",
+          "containers": [
+            {
+              "caption": null,
+              "width": 12,
+              "fields": [
+                {
+                  "caption": "Consent for storing submitted data",
+                  "tooltip": null,
+                  "placeholder": null,
+                  "cssClass": null,
+                  "alias": "dataConsent",
+                  "id": "1c5be7e8-4aef-46d8-ae71-870e70ea4469",
+                  "fieldTypeId": "a72c9df9-3847-47cf-afb8-b86773fd12cd",
+                  "prevalueSourceId": "00000000-0000-0000-0000-000000000000",
+                  "dataSourceFieldKey": null,
+                  "containsSensitiveData": false,
+                  "mandatory": true,
+                  "regex": null,
+                  "requiredErrorMessage": "Consent is required to store and process the data in this form.",
+                  "invalidErrorMessage": null,
+                  "condition": null,
+                  "settings": {
+                    "AcceptCopy": "Yes, I give permission to store and process my data",
+                    "ShowLabel": ""
+                  },
+                  "preValues": [],
+                  "parsedPreValues": [],
+                  "allowedUploadTypes": null,
+                  "allowMultipleFileUploads": true
+                }
+              ]
+            }
+          ],
+          "condition": null
+        }
+      ],
+      "caption": "Hi there! How are you doing today?",
+      "sortOrder": 0,
+      "id": "be4e9785-d055-4d8c-974e-1a3a50f8a633",
+      "form": "00000000-0000-0000-0000-000000000000",
+      "buttonCondition": null
+    }
+  ],
+  "id": "a98a9886-1b33-4ad5-9663-e92feb46fc4a",
+  "fieldIndicationType": "MarkMandatoryFields",
+  "indicator": "*",
+  "showValidationSummary": false,
+  "hideFieldValidation": false,
+  "requiredErrorMessage": "Please provide a value for {0}",
+  "invalidErrorMessage": "Please provide a valid value for {0}",
+  "messageOnSubmit": "Thank you! We'll be in touch shortly.",
+  "goToPageOnSubmit": 1059,
+  "xPathOnSubmit": null,
+  "manualApproval": false,
+  "storeRecordsLocally": true,
+  "autocompleteAttribute": "",
+  "cssClass": null,
+  "disableDefaultStylesheet": false,
+  "useClientDependency": false,
+  "workflows": [
+    "3521d67b-9c89-4e43-8b28-5b9ac167c298"
+  ],
+  "datasource": null,
+  "submitLabel": "Submit",
+  "nextLabel": "Next",
+  "prevLabel": "Previous",
+  "folderId": null
+}
