@@ -1,0 +1,11 @@
+﻿body {
+}
+
+.welcome-dashboard h1 {
+    font-size: 4em;
+    color: purple;
+}
+
+.welcome-dashboard p {
+ color:#ff0000;
+}

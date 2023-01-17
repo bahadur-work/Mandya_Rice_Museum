@@ -1,0 +1,18 @@
+{
+  "dashboards": [
+    {
+      "alias": "welcomeDashboard",
+      "view": "~/App_Plugins/CustomWelcomeDashboard/welcomeDashboard.html",
+
+      "sections": [ "content" ],
+      "weight": -10,
+      "access": [
+        { "deny": "translator" },
+        { "grant": "admin" }
+      ]
+    }
+  ],
+
+  "javascript": [ /*Add Js file*/ ],
+  "css": [ "~/App_Plugins/CustomWelcomeDashboard/customWelcomeDashboard.css" ]
+}

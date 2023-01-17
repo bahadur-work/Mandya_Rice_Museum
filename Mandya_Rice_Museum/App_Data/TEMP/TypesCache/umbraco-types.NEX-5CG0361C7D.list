@@ -123,39 +123,6 @@ Umbraco.ModelsBuilder.Embedded.BackOffice.MediaTypeModelValidator, Umbraco.Model
 Umbraco.ModelsBuilder.Embedded.BackOffice.MemberTypeModelValidator, Umbraco.ModelsBuilder.Embedded, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.ModelsBuilder.Embedded.BackOffice.ModelsBuilderDashboardController, Umbraco.ModelsBuilder.Embedded, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.ModelsBuilder.Embedded.BackOffice.ContentTypeModelValidator, Umbraco.ModelsBuilder.Embedded, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
-Umbraco.Forms.Core.Migrations.V_8_8_0.AddFormFolders, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
-Umbraco.Forms.Core.Migrations.V_8_8_0.AddFormFoldersConstraints, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
-Umbraco.Forms.Core.Migrations.V_8_7_0.AddFormKeysAndIndexes, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
-Umbraco.Forms.Core.Migrations.V_8_7_0.AddRecordKeysAndIndexes, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
-Umbraco.Forms.Core.Migrations.V_8_5_0.AddFormsDbStorage, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
-Umbraco.Forms.Core.Migrations.V_8_13_0.AddRecordCultureColumn, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
-Umbraco.Forms.Core.Migrations.V_8_13_0.AddRecordWorkflowAudit, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
-Umbraco.Forms.Core.Migrations.V_8_13_0.AddRecordWorkflowAuditExecutionStage, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
-Umbraco.Forms.Core.Migrations.V_8_12_0.AddUserGroupStartFolders, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
-Umbraco.Forms.Core.Migrations.V_8_12_0.AddUserGroupStartFoldersConstraints, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
-Umbraco.Forms.Core.Migrations.V_8_11_0.AddRecordAudit, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
-Umbraco.Forms.Core.Migrations.V_8_11_0.AddRecordKeysAndIndexes2, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
-Umbraco.Forms.Core.Migrations.V_8_11_0.AddUserGroupPermissions, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
-Umbraco.Forms.Core.Migrations.V_8_11_0.AddUserGroupPermissionsConstraints, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
-Umbraco.Forms.Core.Migrations.V_8_11_0.AddUserStartFolders, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
-Umbraco.Forms.Core.Migrations.V_8_11_0.AddUserStartFoldersConstraints, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
-Umbraco.Forms.Core.Migrations.V_8_11_0.AddViewAndEditEntriesPermissions, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
-Umbraco.Forms.Core.Migrations.V_8_0_0.AddFormsApplicationPermission, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
-Umbraco.Forms.Core.Migrations.V_8_0_0.AddFormsMacro, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
-Umbraco.Forms.Core.Migrations.V_8_0_0.AddFormsTables, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
-Umbraco.Forms.Core.Migrations.V_8_0_0.AddFormsTrialLicense, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
-Umbraco.Forms.Core.Healthchecks.DatabaseIntegrityHealthCheck, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
-Umbraco.Forms.Core.Components.FormsNotRunningComponent, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
-Umbraco.Forms.Core.Components.UmbracoFormsComposer, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
-Umbraco.Forms.Core.Cache.DataSourceCacheRefresher, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
-Umbraco.Forms.Core.Cache.DataSourceDbCacheRefresher, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
-Umbraco.Forms.Core.Cache.FolderDbCacheRefresher, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
-Umbraco.Forms.Core.Cache.FormCacheRefresher, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
-Umbraco.Forms.Core.Cache.FormDbCacheRefresher, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
-Umbraco.Forms.Core.Cache.PreValueCacheRefresher, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
-Umbraco.Forms.Core.Cache.PreValueDbCacheRefresher, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
-Umbraco.Forms.Core.Cache.WorkflowCacheRefresher, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
-Umbraco.Forms.Core.Cache.WorkflowDbCacheRefresher, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Controllers.UmbProfileController, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Controllers.UmbLoginStatusController, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Controllers.UmbRegisterController, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
@@ -365,6 +332,39 @@ Umbraco.Web.Cache.MemberGroupCacheRefresher, Umbraco.Web, Version=8.0.0.0, Cultu
 Umbraco.Web.Cache.PublicAccessCacheRefresher, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Cache.TemplateCacheRefresher, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Cache.UserCacheRefresher, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
+Umbraco.Forms.Core.Migrations.V_8_8_0.AddFormFolders, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
+Umbraco.Forms.Core.Migrations.V_8_8_0.AddFormFoldersConstraints, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
+Umbraco.Forms.Core.Migrations.V_8_7_0.AddFormKeysAndIndexes, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
+Umbraco.Forms.Core.Migrations.V_8_7_0.AddRecordKeysAndIndexes, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
+Umbraco.Forms.Core.Migrations.V_8_5_0.AddFormsDbStorage, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
+Umbraco.Forms.Core.Migrations.V_8_13_0.AddRecordCultureColumn, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
+Umbraco.Forms.Core.Migrations.V_8_13_0.AddRecordWorkflowAudit, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
+Umbraco.Forms.Core.Migrations.V_8_13_0.AddRecordWorkflowAuditExecutionStage, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
+Umbraco.Forms.Core.Migrations.V_8_12_0.AddUserGroupStartFolders, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
+Umbraco.Forms.Core.Migrations.V_8_12_0.AddUserGroupStartFoldersConstraints, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
+Umbraco.Forms.Core.Migrations.V_8_11_0.AddRecordAudit, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
+Umbraco.Forms.Core.Migrations.V_8_11_0.AddRecordKeysAndIndexes2, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
+Umbraco.Forms.Core.Migrations.V_8_11_0.AddUserGroupPermissions, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
+Umbraco.Forms.Core.Migrations.V_8_11_0.AddUserGroupPermissionsConstraints, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
+Umbraco.Forms.Core.Migrations.V_8_11_0.AddUserStartFolders, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
+Umbraco.Forms.Core.Migrations.V_8_11_0.AddUserStartFoldersConstraints, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
+Umbraco.Forms.Core.Migrations.V_8_11_0.AddViewAndEditEntriesPermissions, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
+Umbraco.Forms.Core.Migrations.V_8_0_0.AddFormsApplicationPermission, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
+Umbraco.Forms.Core.Migrations.V_8_0_0.AddFormsMacro, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
+Umbraco.Forms.Core.Migrations.V_8_0_0.AddFormsTables, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
+Umbraco.Forms.Core.Migrations.V_8_0_0.AddFormsTrialLicense, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
+Umbraco.Forms.Core.Healthchecks.DatabaseIntegrityHealthCheck, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
+Umbraco.Forms.Core.Components.FormsNotRunningComponent, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
+Umbraco.Forms.Core.Components.UmbracoFormsComposer, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
+Umbraco.Forms.Core.Cache.DataSourceCacheRefresher, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
+Umbraco.Forms.Core.Cache.DataSourceDbCacheRefresher, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
+Umbraco.Forms.Core.Cache.FolderDbCacheRefresher, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
+Umbraco.Forms.Core.Cache.FormCacheRefresher, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
+Umbraco.Forms.Core.Cache.FormDbCacheRefresher, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
+Umbraco.Forms.Core.Cache.PreValueCacheRefresher, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
+Umbraco.Forms.Core.Cache.PreValueDbCacheRefresher, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
+Umbraco.Forms.Core.Cache.WorkflowCacheRefresher, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
+Umbraco.Forms.Core.Cache.WorkflowDbCacheRefresher, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
 
 Umbraco.Core.Composing.IComposer
 
@@ -378,8 +378,6 @@ Umbraco.Core.Logging.Viewer.LogViewerComposer, Umbraco.Core, Version=8.0.0.0, Cu
 Umbraco.Forms.Web.Installer.ClientDependencyStartupComposer, Umbraco.Forms.Web, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Forms.Web.Components.WebComposer, Umbraco.Forms.Web, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
 Umbraco.ModelsBuilder.Embedded.Compose.ModelsBuilderComposer, Umbraco.ModelsBuilder.Embedded, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
-Umbraco.Forms.Core.Components.FormsNotRunningComponent, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
-Umbraco.Forms.Core.Components.UmbracoFormsComposer, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.SignalR.PreviewHubComposer, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Runtime.WebInitialComposer, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Runtime.WebFinalComposer, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
@@ -399,6 +397,8 @@ Umbraco.Web.Compose.NotificationsComposer, Umbraco.Web, Version=8.0.0.0, Culture
 Umbraco.Web.Compose.PublicAccessComposer, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Compose.NestedContentPropertyComposer, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Cache.DistributedCacheBinderComposer, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
+Umbraco.Forms.Core.Components.FormsNotRunningComponent, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
+Umbraco.Forms.Core.Components.UmbracoFormsComposer, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
 
 Umbraco.Core.PropertyEditors.IPropertyValueConverter
 
@@ -615,15 +615,6 @@ Umbraco.Web.PropertyEditors.ParameterEditors.PropertyTypeParameterEditor, Umbrac
 
 Umbraco.Core.Cache.ICacheRefresher
 
-Umbraco.Forms.Core.Cache.DataSourceCacheRefresher, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
-Umbraco.Forms.Core.Cache.DataSourceDbCacheRefresher, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
-Umbraco.Forms.Core.Cache.FolderDbCacheRefresher, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
-Umbraco.Forms.Core.Cache.FormCacheRefresher, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
-Umbraco.Forms.Core.Cache.FormDbCacheRefresher, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
-Umbraco.Forms.Core.Cache.PreValueCacheRefresher, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
-Umbraco.Forms.Core.Cache.PreValueDbCacheRefresher, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
-Umbraco.Forms.Core.Cache.WorkflowCacheRefresher, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
-Umbraco.Forms.Core.Cache.WorkflowDbCacheRefresher, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Cache.ContentCacheRefresher, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Cache.UserGroupCacheRefresher, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Cache.UserGroupPermissionsCacheRefresher, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
@@ -641,6 +632,15 @@ Umbraco.Web.Cache.MemberGroupCacheRefresher, Umbraco.Web, Version=8.0.0.0, Cultu
 Umbraco.Web.Cache.PublicAccessCacheRefresher, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Cache.TemplateCacheRefresher, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Cache.UserCacheRefresher, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
+Umbraco.Forms.Core.Cache.DataSourceCacheRefresher, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
+Umbraco.Forms.Core.Cache.DataSourceDbCacheRefresher, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
+Umbraco.Forms.Core.Cache.FolderDbCacheRefresher, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
+Umbraco.Forms.Core.Cache.FormCacheRefresher, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
+Umbraco.Forms.Core.Cache.FormDbCacheRefresher, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
+Umbraco.Forms.Core.Cache.PreValueCacheRefresher, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
+Umbraco.Forms.Core.Cache.PreValueDbCacheRefresher, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
+Umbraco.Forms.Core.Cache.WorkflowCacheRefresher, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
+Umbraco.Forms.Core.Cache.WorkflowDbCacheRefresher, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
 
 Umbraco.Core.PackageActions.IPackageAction
 
@@ -686,7 +686,6 @@ Umbraco.Web.Actions.ActionUpdate, Umbraco.Web, Version=8.0.0.0, Culture=neutral,
 
 Umbraco.Web.HealthCheck.HealthCheck
 
-Umbraco.Forms.Core.Healthchecks.DatabaseIntegrityHealthCheck, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.HealthCheck.Checks.Permissions.FolderAndFilePermissionsCheck, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.HealthCheck.Checks.Services.SmtpCheck, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.HealthCheck.Checks.Security.UmbracoApplicationUrlCheck, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
@@ -703,6 +702,7 @@ Umbraco.Web.HealthCheck.Checks.Config.TrySkipIisCustomErrorsCheck, Umbraco.Web, 
 Umbraco.Web.HealthCheck.Checks.Config.CustomErrorsCheck, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.HealthCheck.Checks.Config.TraceCheck, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.HealthCheck.Checks.Config.CompilationDebugCheck, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
+Umbraco.Forms.Core.Healthchecks.DatabaseIntegrityHealthCheck, Umbraco.Forms.Core, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
 
 Umbraco.Web.HealthCheck.NotificationMethods.IHealthCheckNotificationMethod
 
@@ -762,7 +762,4 @@ Umbraco.Forms.Core.Providers.WorkflowTypes.SendRazorEmail, Umbraco.Forms.Core.Pr
 Umbraco.Forms.Core.Providers.WorkflowTypes.SendXsltEmail, Umbraco.Forms.Core.Providers, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Forms.Core.Providers.WorkflowTypes.Slack, Umbraco.Forms.Core.Providers, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Forms.Core.Providers.WorkflowTypes.SlackV2, Umbraco.Forms.Core.Providers, Version=8.13.4.0, Culture=neutral, PublicKeyToken=null
-
-Umbraco.Core.Deploy.IServiceConnector
-
 

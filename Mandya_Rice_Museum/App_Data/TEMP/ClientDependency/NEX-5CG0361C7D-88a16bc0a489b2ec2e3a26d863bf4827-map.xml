@@ -108,4 +108,39 @@
       <file name="/App_Plugins/UmbracoForms/js/umbraco.forms.js" />
     </files>
   </item>
+  <item key="L3VtYnJhY28vYXNzZXRzL2Nzcy91bWJyYWNvLmNzczsvdW1icmFjby9saWIvYm9vdHN0cmFwLXNvY2lhbC9ib290c3RyYXAtc29jaWFsLmNzczsvdW1icmFjby9saWIvZm9udC1hd2Vzb21lL2Nzcy9mb250LWF3ZXNvbWUubWluLmNzczs" file="C:\Users\44021542\source\repos\Mandya_Rice_Museum\Mandya_Rice_Museum\App_Data\TEMP\ClientDependency\1421373135_cd199906f6e64718abb2b9352f399daa.cdC" compression="gzip" version="1421373135">
+    <files>
+      <file name="/umbraco/assets/css/umbraco.css" />
+      <file name="/umbraco/lib/bootstrap-social/bootstrap-social.css" />
+      <file name="/umbraco/lib/font-awesome/css/font-awesome.min.css" />
+    </files>
+  </item>
+  <item key="L0FwcF9QbHVnaW5zL1NhbXBsZVJURS9zYW1wbGVSVEUuY29udHJvbGxlci5qczsvQXBwX1BsdWdpbnMvVW1icmFjb0Zvcm1zL2pzL3VtYnJhY28uZm9ybXMuanM7" file="C:\Users\44021542\source\repos\Mandya_Rice_Museum\Mandya_Rice_Museum\App_Data\TEMP\ClientDependency\1421373135_e1e4aeaf218c47ceaa56f8cf5a7cc908.cdJ" compression="gzip" version="1421373135">
+    <files>
+      <file name="/App_Plugins/SampleRTE/sampleRTE.controller.js" />
+      <file name="/App_Plugins/UmbracoForms/js/umbraco.forms.js" />
+    </files>
+  </item>
+  <item key="L0FwcF9QbHVnaW5zL1NhbXBsZVRleHRTdHJpbmcvc2FtcGxldGV4dHN0cmluZy5jb250cm9sbGVyLmpzOy9BcHBfUGx1Z2lucy9VbWJyYWNvRm9ybXMvanMvdW1icmFjby5mb3Jtcy5qczs" file="C:\Users\44021542\source\repos\Mandya_Rice_Museum\Mandya_Rice_Museum\App_Data\TEMP\ClientDependency\1421373135_7ea830fe2a234a5da748d158f3f2f7aa.cdJ" compression="gzip" version="1421373135">
+    <files>
+      <file name="/App_Plugins/SampleTextString/sampletextstring.controller.js" />
+      <file name="/App_Plugins/UmbracoForms/js/umbraco.forms.js" />
+    </files>
+  </item>
+  <item key="L0FwcF9QbHVnaW4vQ3VzdG9tV2VsY29tZURhc2hib2FyZC9jdXN0b21XZWxjb21lRGFzaGJvYXJkLmNzczsvQXBwX1BsdWdpbnMvVW1icmFjb0Zvcm1zL2Nzcy91bWJyYWNvLmZvcm1zLmNzczs" file="C:\Users\44021542\source\repos\Mandya_Rice_Museum\Mandya_Rice_Museum\App_Data\TEMP\ClientDependency\1421373135_070e1dff36214511aefec25d0f0ba440.cdC" compression="gzip" version="1421373135">
+    <files>
+      <file name="/App_Plugins/UmbracoForms/css/umbraco.forms.css" />
+    </files>
+  </item>
+  <item key="L3VtYnJhY28vY3VzdG9tV2VsY29tZURhc2hib2FyZC5jc3M7L0FwcF9QbHVnaW5zL1VtYnJhY29Gb3Jtcy9jc3MvdW1icmFjby5mb3Jtcy5jc3M7" file="C:\Users\44021542\source\repos\Mandya_Rice_Museum\Mandya_Rice_Museum\App_Data\TEMP\ClientDependency\1421373135_0c8c5bd6e9e54915936a7e2b6de555c8.cdC" compression="gzip" version="1421373135">
+    <files>
+      <file name="/App_Plugins/UmbracoForms/css/umbraco.forms.css" />
+    </files>
+  </item>
+  <item key="L0FwcF9QbHVnaW5zL0N1c3RvbVdlbGNvbWVEYXNoYm9hcmQvY3VzdG9tV2VsY29tZURhc2hib2FyZC5jc3M7L0FwcF9QbHVnaW5zL1VtYnJhY29Gb3Jtcy9jc3MvdW1icmFjby5mb3Jtcy5jc3M7" file="C:\Users\44021542\source\repos\Mandya_Rice_Museum\Mandya_Rice_Museum\App_Data\TEMP\ClientDependency\1421373135_e12edb924c944d64a83efcaa77804072.cdC" compression="gzip" version="1421373135">
+    <files>
+      <file name="/App_Plugins/CustomWelcomeDashboard/customWelcomeDashboard.css" />
+      <file name="/App_Plugins/UmbracoForms/css/umbraco.forms.css" />
+    </files>
+  </item>
 </map>

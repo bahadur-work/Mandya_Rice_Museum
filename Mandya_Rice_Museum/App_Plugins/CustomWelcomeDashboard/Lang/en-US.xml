@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<language alias="en_us" intName="English (US)" localName="English (US)" lcid="" culture="en-US">
+	<area alias="dashboardTabs">
+		<key alias="welcomeDashboard">Welcome</key>
+	</area>
+	<area alias ="welcomeDashboard">
+		<key alias ="heading">Welcome</key>
+		<key alias="bodytext">This is the Backoffice. From here, you can modify the content, media, and settings of your website.</key>
+		<key alias="copyright">@MandyaRiceMuseum 2023</key>
+	</area>
+</language>

@@ -7,18 +7,42 @@
       //the name
       "name": "My markdown editor",
       //grouping of "select editor" dialogue
-      "group": "Rich Content",
+      "group": "Pickers",
       //the icon
       "icon": "icon-code",
       "editor": {
         "view": "~/App_Plugins/MarkDownEditor/markdowneditor.html"
+      },
+
+      "prevalues": {
+        "fields": [
+          {
+            "label": "Preview",
+            "description": "Display a live preview",
+            "key": "preview",
+            "view": "boolean"
+          },
+          {
+            "label": "Default value",
+            "description": "If value is blank, the editor will show this",
+            "key": "defaultValue",
+            "view": "boolean"
+          },
+          {
+            "label": "Content",
+            "description": "Display some content",
+            "key": "content",
+            "view": "textstring"
+          }
+
+        ]
       }
 
     }
   ],
   "javascript": [
     "~/App_Plugins/MarkDownEditor/markdowneditor.controller.js"
-  ],
+  ]
 
   //"css": [
   //  "~/App_Plugins/UmbracoForms/css/umbraco.forms.css"
